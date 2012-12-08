@@ -539,11 +539,15 @@ table.form > tbody > tr > td {
 .toolbar{
 	margin-bottom:15px;
 }
+.toolbar .dashboard-content{
+	overflow:auto;
+}
 .toolbar .toolbar-item{
 	float:left;
 	margin-left:10px;
 	text-align: center;
 	font-size:14pt;
+	margin-bottom:40px;
 }
 
 .toolbar .toolbar-item a{
