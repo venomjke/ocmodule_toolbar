@@ -13,8 +13,9 @@ Install
 1. admin/controller/common/header.php 
 
 В этом файле нужно добавить в метод index()
+[code]
 $this->data['text_toolbar'] = $this->language->get('text_toolbar');
-
+[/code]
 2. admin/controller/common/home.php
 
 В метод index вставить в любое место.
