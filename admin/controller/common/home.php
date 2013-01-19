@@ -197,7 +197,7 @@ class ControllerCommonHome extends Controller {
 			$this->data['text_toolbar'] = $this->language->get('text_toolbar');
 			$toolbarItems = $this->model_toolbar_toolbar->getItems();
 			foreach($toolbarItems as &$toolbarItem){
-				$toolbarItem['href'] = $this->url->link($toolbarItem['route'],'token='.$this->data['token'],'SSL');
+				$toolbarItem['href'] = $this->url->link($toolbarItem['route'],'token='.$this->session->data['token'],'SSL');
 				if(!empty($toolbarItem['img'])){
 					$toolbarItem['thumb'] = $this->model_tool_image->resize($toolbarItem['img'],126,126);
 				}else{
